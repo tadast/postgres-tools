@@ -11,4 +11,7 @@ RUN apt-get -y install wget && \
     apt-get -y update && \
     apt-get -y install postgresql postgresql-contrib libpq-dev
 
+RUN mkdir -p /data
+WORKDIR /data
+
 CMD /bin/bash
