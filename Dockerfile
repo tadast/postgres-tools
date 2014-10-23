@@ -1,5 +1,7 @@
 FROM ubuntu
 
+RUN apt-get update -y
+
 #postgres
 RUN locale-gen en_US.UTF-8
 RUN update-locale LANG=en_US.UTF-8
